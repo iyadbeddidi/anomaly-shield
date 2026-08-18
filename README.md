@@ -39,7 +39,7 @@ Le **MLP supervisé** (30 features, StandardScaler) est le modèle déployé. R�
 
 ```
 anomaly-shield/
-├── predict.py            # Classe AnomalyShield — inférence
+├── predict.py            # Classe AnomalyShield ; inférence
 ├── api.py                # API FastAPI
 ├── dashboard.py          # Dashboard Streamlit
 ├── alerting.py           # AlertManager — log + email
