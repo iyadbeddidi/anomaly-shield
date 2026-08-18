@@ -146,7 +146,7 @@ Copier `.env.example` en `.env` et adapter :
 
 ## Auteur
 
-**Iyad** — Étudiant Ingénieur IDSCC, ENSA Oujda
+**Iyad** : Étudiant Ingénieur IDSCC, ENSA Oujda
 Stage DSI Ministère de la Transition Énergétique et du Développement Durable
 
 ## Licence
