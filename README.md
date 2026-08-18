@@ -1,4 +1,4 @@
-# 🛡️ AnomalyShield
+# AnomalyShield
 
 > Système intelligent de détection d'anomalies pour le monitoring des logs et infrastructures informatiques
 > Stage DSI — Ministère de la Transition Énergétique et du Développement Durable
@@ -7,7 +7,7 @@ AnomalyShield est un pipeline complet de détection d'anomalies réseau basé su
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - Détection d'anomalies binaire (trafic **normal** vs **attaque**) via un **MLP supervisé** (PyTorch)
 - **API REST** (FastAPI) pour l'inférence
@@ -19,14 +19,14 @@ AnomalyShield est un pipeline complet de détection d'anomalies réseau basé su
 
 ---
 
-## 🤖 Modèle déployé
+## Modèle déployé
 
 Le **MLP supervisé** (30 features, StandardScaler) est le modèle déployé. Résultats obtenus en Phase 3 :
 
 | Modèle | Type | AUC-ROC | F1-score |
 |---|---|---|---|
 | **Random Forest** | Supervisé | 0.9998 | 0.9963 |
-| **MLP Supervisé** ✅ | Supervisé | 0.9996 | 0.9814 |
+| **MLP Supervisé** | Supervisé | 0.9996 | 0.9814 |
 | Dense Autoencoder | Non-supervisé | 0.8888 | 0.4651 |
 | Isolation Forest | Non-supervisé | 0.7852 | 0.5851 |
 | LSTM Autoencoder | Non-supervisé | 0.5000 | 0.1576 (échec) |
@@ -35,7 +35,7 @@ Le **MLP supervisé** (30 features, StandardScaler) est le modèle déployé. R�
 
 ---
 
-## 🗂️ Structure du projet
+## Structure du projet
 
 ```
 anomaly-shield/
@@ -55,7 +55,7 @@ anomaly-shield/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Option 1 — Docker (recommandé)
 
@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥️ Usage
+## Usage
 
 ### API (FastAPI)
 
@@ -136,7 +136,7 @@ Copier `.env.example` en `.env` et adapter :
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **CICIDS 2017** — Canadian Institute for Cybersecurity Intrusion Detection Evaluation Dataset. ~2.8M flux réseau, 78 features (CICFlowMeter), classes : BENIGN, DDoS, PortScan, Brute Force, Web Attack, Infiltration, Bot.
 
@@ -144,11 +144,11 @@ Copier `.env.example` en `.env` et adapter :
 
 ---
 
-## 👤 Auteur
+## Auteur
 
 **Iyad** — Étudiant Ingénieur IDSCC, ENSA Oujda
-Stage DSI — Ministère de la Transition Énergétique et du Développement Durable
+Stage DSI Ministère de la Transition Énergétique et du Développement Durable
 
-## 📄 Licence
+## Licence
 
 Usage académique et institutionnel uniquement.
