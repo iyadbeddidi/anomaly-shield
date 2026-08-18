@@ -1,7 +1,7 @@
 # AnomalyShield
 
 > Système intelligent de détection d'anomalies pour le monitoring des logs et infrastructures informatiques
-> Stage DSI — Ministère de la Transition Énergétique et du Développement Durable
+> Stage DSI Ministère de la Transition Énergétique et du Développement Durable
 
 AnomalyShield est un pipeline complet de détection d'anomalies réseau basé sur le Machine Learning, sur le dataset **CICIDS 2017** (~2.5M flux × 79 colonnes).
 
@@ -13,7 +13,7 @@ AnomalyShield est un pipeline complet de détection d'anomalies réseau basé su
 - **API REST** (FastAPI) pour l'inférence
 - **Dashboard** interactif (Streamlit) : saisie manuelle + upload CSV + visualisations
 - **Alerting** : log des alertes + notification email (SMTP optionnel)
-- **Pipeline end-to-end** : nettoyage → prédiction → alerte, par chunks (adapté aux gros CSV)
+- **Pipeline end-to-end** : nettoyage -> prédiction -> alerte, par chunks (adapté aux gros CSV)
 - **Tests** unitaires (pytest)
 - **Conteneurisation** (Docker / Docker Compose)
 
@@ -57,7 +57,7 @@ anomaly-shield/
 
 ## Installation
 
-### Option 1 — Docker (recommandé)
+### Option 1 : Docker (recommandé)
 
 ```powershell
 # Construire et lancer l'API + le dashboard
@@ -67,7 +67,7 @@ docker compose up --build
 # Dashboard : http://localhost:8501
 ```
 
-### Option 2 — Installation locale
+### Option 2 : Installation locale
 
 ```powershell
 python -m venv venv
@@ -120,7 +120,7 @@ python -m pytest
 
 ---
 
-## ⚙️ Configuration (alerting)
+## Configuration (alerting)
 
 Copier `.env.example` en `.env` et adapter :
 
@@ -138,7 +138,7 @@ Copier `.env.example` en `.env` et adapter :
 
 ## Dataset
 
-**CICIDS 2017** — Canadian Institute for Cybersecurity Intrusion Detection Evaluation Dataset. ~2.8M flux réseau, 78 features (CICFlowMeter), classes : BENIGN, DDoS, PortScan, Brute Force, Web Attack, Infiltration, Bot.
+**CICIDS 2017** : Canadian Institute for Cybersecurity Intrusion Detection Evaluation Dataset. ~2.8M flux réseau, 78 features (CICFlowMeter), classes : BENIGN, DDoS, PortScan, Brute Force, Web Attack, Infiltration, Bot.
 
 > Les données réelles du ministère étant confidentielles, ce dataset public de référence est utilisé pour la validation du système.
 
