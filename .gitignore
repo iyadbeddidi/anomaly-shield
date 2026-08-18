@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+
+# Configuration locale
+.env
+
+# Sorties
+logs/
+output/
+output_test/
+
+# Documentation technique (non versionnée)
+MDs/
+AGENTS.md
+
+# Données volumineuses (non versionnées)
+data/
+
+# Modèles lourds / non utilisés en déploiement
+pkls/rf_model.pkl
+pkls/isolation_forest.pkl
+pkls/if_model.pkl
+pkls/lstm_autoencoder.pt
+pkls/best_ae.pt
+pkls/dense_ae.pt
+pkls/mlp_classifier.pt
+pkls/mlp_config.pkl
+pkls/ae_config.pkl
+pkls/anomaly_threshold.pkl
+pkls/top20_features.pkl
+pkls/top30_features.pkl
+pkls/standard_scaler_30.pkl

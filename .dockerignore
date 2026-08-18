@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.git/
+.env
+tests/
+MDs/
+phase1,2/
+data/
+output/
+logs/
+*.ipynb
+pkls/*
+!pkls/mlp_model.pt
+!pkls/scaler.pkl
+!pkls/features.pkl
